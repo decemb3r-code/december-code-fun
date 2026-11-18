@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✏️ EDIT ME: This is the text shown on the browser tab. -->
+  <title>december-code.fun</title>
+
+  <!-- ✏️ EDIT ME: This is the short description Google and link previews show. -->
+  <meta name="description" content="A little corner of the internet where I show the things I build.">
+
+  <!-- This line connects the design file (style.css). Don't remove it. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER — the big title at the top of the page
+       ========================================================= -->
+  <header class="header">
+    <!-- ✏️ EDIT ME: your site name -->
+    <h1 class="site-title">december-code.fun</h1>
+
+    <!-- ✏️ EDIT ME: one sentence about you -->
+    <p class="tagline">
+      Hi, I'm December. I make apps, websites, and little experiments —
+      some with Claude Code, some all by myself.
+    </p>
+  </header>
+
+
+  <!-- =========================================================
+       FILTER BUTTONS — let visitors show only one kind of project.
+       Each button's data-filter must match a project's data-type below.
+       ========================================================= -->
+  <nav class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="claude">Built with Claude Code</button>
+    <button class="filter" data-filter="me">Built by me</button>
+  </nav>
+
+
+  <!-- =========================================================
+       PROJECT GRID — each <a class="card"> is one tile.
+
+       🧩 TO ADD A NEW PROJECT: copy one whole card, from
+          <a class="card" ...>   down to   </a>
+       and paste it right below another one. Then change:
+         • href="..."        → the link the tile opens (use "#" if none yet)
+         • data-type="..."   → "claude" or "me" (controls the filter + badge)
+         • the emoji         → any emoji you like
+         • the <h2> text     → the project name
+         • the <p> text      → a one-line description
+
+       🗑️ TO REMOVE A PROJECT: delete its whole card.
+       ========================================================= -->
+  <main class="grid">
+
+    <!-- ---------- Project card ---------- -->
+    <a class="card" href="#" data-type="claude">
+      <span class="emoji">✅</span>
+      <h2>Tasks Quest</h2>
+      <p>An iPhone app that turns my morning and night routines into quests. Finish them to earn tickets for TikTok.</p>
+      <span class="badge">Claude Code</span>
+    </a>
+
+    <!-- ---------- Project card ---------- -->
+    <a class="card" href="#" data-type="claude">
+      <span class="emoji">🍸</span>
+      <h2>Cocktail App</h2>
+      <p>Look up drinks and how to make them.</p>
+      <span class="badge">Claude Code</span>
+    </a>
+
+    <!-- ---------- Project card ---------- -->
+    <a class="card" href="#" data-type="claude">
+      <span class="emoji">🌐</span>
+      <h2>This Website</h2>
+      <p>The page you're on right now — built together with Claude Code.</p>
+      <span class="badge">Claude Code</span>
+    </a>
+
+    <!-- ---------- Project card ---------- -->
+    <a class="card" href="#" data-type="me">
+      <span class="emoji">🐍</span>
+      <h2>Python Practice</h2>
+      <p>Small Python scripts I wrote while learning to code.</p>
+      <span class="badge">By me</span>
+    </a>
+
+    <!-- ---------- Project card ---------- -->
+    <a class="card" href="#" data-type="me">
+      <span class="emoji">🛝</span>
+      <h2>Swift Playground</h2>
+      <p>Where I try out Swift ideas on my own.</p>
+      <span class="badge">By me</span>
+    </a>
+
+    <!-- ---------- "Coming soon" card — fun placeholder ---------- -->
+    <div class="card card-soon">
+      <span class="emoji">🚧</span>
+      <h2>Coming soon…</h2>
+      <p>Something new is cooking.</p>
+    </div>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER — the bottom of the page
+       ========================================================= -->
+  <footer class="footer">
+    <!-- This credit thanks Neal for the inspiration. Please keep it! -->
+    <p>
+      Inspired by the wonderful
+      <a href="https://neal.fun" target="_blank" rel="noopener">neal.fun</a>
+      by Neal Agarwal.
+    </p>
+
+    <!-- ✏️ EDIT ME: add your own links (GitHub, email, socials).
+         Copy one <a> line to add another. -->
+    <p class="links">
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      ·
+      <a href="mailto:you@example.com">Email me</a>
+    </p>
+
+    <!-- The year below is filled in automatically by script.js -->
+    <p class="copyright">© <span id="year"></span> December</p>
+  </footer>
+
+  <!-- This line connects the interactive code (script.js). Keep it last. -->
+  <script src="script.js"></script>
+</body>
+</html>
